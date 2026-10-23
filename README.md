@@ -1,31 +1,59 @@
-🚀 **Live Demo:** (https://miriambensafiddine.github.io/link-page/)
+# Miriam Bensafiddine – Digital Designer
 
-# Hi there! 👋 I'm Miriam Bensafiddine
+A personal portfolio for Miriam Bensafiddine, a digital designer and creative technologist based in Stockholm. The website showcases selected projects within creative direction, visual identity, motion design, and front-end development.
 
-A passionate Creative Developer / Frontend Developer from Stockholm. I love building interactive, immersive web experiences and bringing things to life with code.
+**Website:** [miriambensafiddine.se](https://miriambensafiddine.se)
 
-### 🔭 Quick Info
-- 💼 Currently working on my portfolio.
-- 🌱 Currently learning more about **WebGL, Shaders** etc
-- 👯 Looking to collaborate on **creative coding projects**
-- 💬 Ask me about **[T.ex. JavaScript animations, Three.js, GSAP]**
-- 📫 How to reach me: via **[LinkedIn]** (https://www.linkedin.com/in/miriam-bensafiddine/)
+## Contents
 
+- Profile, services, and selected projects featuring images and video clips
+- Contact form via Formspree and social media links
+- Privacy policy, cookie policy, and terms of use in `villkor/`
+- A simple confirmation page in `pages/success.html`
 
-### 🛠️ My Tech Stack
+## 🛠️ Tech Stack
+
+[![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://miriambensafiddine.se)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Three.js](https://img.shields.io/badge/three.js-black?style=for-the-badge&logo=three.js&logoColor=white)
 ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Three.js](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white)
+[![Formspree](https://img.shields.io/badge/Formspree-E61A24?style=for-the-badge&logo=formspree&logoColor=white)](https://formspree.io/)
 
-### 📊 GitHub Stats
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=miriambensafiddine&show_icons=true&theme=transparent&hide_border=true" alt="My GitHub stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=miriambensafiddine&theme=transparent&hide_border=true" alt="GitHub Streak" />
-</div>
+## 🧰 Tooling
 
----
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+> **Note:** Python is used only for running a local development server; no Python code is included in the project itself, and no additional Python packages or dependencies are required beyond the standard library.
 
-### 📝 License
-The code and design structure of this repository are licensed under the **MIT License**.  
-*Note: All personal assets, including photographs, logos, and biographical text, are Copyright (c) 2026 Miriam Bensafiddine. All rights reserved.*
+## Project Structure
+
+```plaintext
+index.html              Homepage and portfolio content
+assets/css/             Stylesheets
+assets/js/              JavaScript and visual effects
+assets/img/             Images
+assets/mov/             Video material
+assets/fonts/           Fonts
+assets/icons/           Icons
+assets/favicons/        Favicons and app icons
+pages/                  Other HTML pages
+villkor/                Privacy policy, cookie policy, and terms of use
+wrangler.jsonc          Wrangler configuration for static assets
+```
+
+## Run Locally
+
+Requires Python 3. Run from the project root: `python3 -m http.server 8000`
+Then open [http://localhost:8000](http://localhost:8000) in your browser—a local web server is necessary because the website uses root-relative paths such as `/assets/...`.
+
+## Deployment
+
+The repository includes a Wrangler configuration that specifies the project root `(.)` as the directory for static assets. With Wrangler installed and the Cloudflare account configured, the website can be deployed using either:
+
+- `npx wrangler deploy` (if Wrangler is installed locally)
+- `wrangler deploy` (if Wrangler is installed globally)
+
+## Copyright
+
+© 2026 Miriam Bensafiddine. All rights reserved. The code, design, and media assets in this repository may not be copied, cloned, or reused without explicit permission.

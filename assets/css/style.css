@@ -8,7 +8,7 @@
   --text-color: #333333;
   --text-light: #d2d2d2;
   --accent-color: #333333;
-  --underline-color: #91ff8d6e;
+  --underline-color: #1dfc009e;
   --grid-gap: 2rem;
 }
 
@@ -110,12 +110,8 @@ h1 {
  .proj-role-desc{
   margin: 0 0 0 0;
     width: 65%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 3px, rgba(0, 0, 0, 0.23) 0px 2px 3px;
-
 }
 
-
- 
 .section-header h2  {
   font-family: 'inter', sans-serif;
   font-variation-settings: 'wght' 600;
@@ -123,7 +119,6 @@ h1 {
   color: var(--text-color);
   margin-bottom:0;
   text-transform: uppercase;
- 
   padding: 0;
   width:100%;
   padding-left:1rem;
@@ -203,8 +198,8 @@ nav ul li a{
   display:inline-block;
   text-transform: uppercase;
   font-weight: 600;
-  padding:0 1rem;
-  margin:0;
+ 
+  margin:auto 2rem;
 }
 
 /*
@@ -227,6 +222,7 @@ nav ul li a{
   margin-bottom: 4rem;
   background-color: var(--bg-color);
 }
+
 .section {
   display: grid;
   grid-column: 1 / -1;
@@ -290,7 +286,7 @@ min-height: 500px;
   -webkit-text-stroke: 1px black;
 }
 .pil::after { 
-  content: "→";
+  content:" →";
   width: 10px;
   height: 3px;
   position: relative;
@@ -442,7 +438,7 @@ min-height: 500px;
 img:not(#hand, #cursor), video {
  max-width: 100%;
   height: auto;
-  border-radius: 0;
+  border-radius:10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -462,7 +458,7 @@ video{
 .video-wrapper {
   width: 85%;
   margin-bottom:6rem;
-  border-radius: 12px;
+  border-radius: 12px 12px 12px 12px;
 }
 .img-wrapper-threejs{
   width: 85%;
@@ -532,6 +528,15 @@ video{
   mask-repeat: no-repeat;
   box-shadow: none;
 }
+.m-type-mask::after{
+    content: 'm-Type — Typsnitt';
+
+    text-transform: uppercase;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+}
+
 .matiamlogo { background: #cac9c9;
   margin-bottom: 2rem;
 }
@@ -879,10 +884,15 @@ video{
   a {
     text-decoration: none;
   }
+  nav{
+     display:flex;
+      justify-content: flex-end;
+  }
   nav ul{
     display:flex;
     flex-direction:row;
-    justify-content: flex-end;
+    justify-content: space-around;
+   
   }
 
   header {
@@ -901,7 +911,7 @@ video{
     margin-top: 0;
     padding-top: 0;
     width:auto;
-    max-width:380px;
+    max-width:400px;
   }
   
   .section-header h2{
@@ -935,7 +945,7 @@ video{
     width: 100%;
     height: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    border-radius: 12px 12px 4px 4px;
+    border-radius: 10px;
 }
   .social {
     display: flex;
@@ -1007,7 +1017,7 @@ video{
  
   .img-wrapper, 
   .video-wrapper {
-    border-radius:8px;
+    border-radius:10px;
   }
   .border{
     border:.5px solid var(--accent-color);

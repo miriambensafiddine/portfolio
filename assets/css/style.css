@@ -94,7 +94,7 @@
     grid-column: 1 / -1;
     margin-bottom: 3rem;
     border-bottom: 3px solid var(--text-color);
-    padding-bottom: 1.5rem;
+   
   }
 
   h1 {
@@ -214,7 +214,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
-    border-top: 1px solid rgba(0,0,0,0.1);
+    
     padding-top: 2rem;
     padding-left: 8px;
   }
@@ -242,8 +242,10 @@
   /* EXPERIENCE & EDUCATION (Mobil) */
   .grid-item {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    margin:auto;
    /* display: grid;
     grid-template-columns: 1fr; /* Mobil: 1 kolumn */
    /* gap: 0.5rem; /* Mindre gap på mobil */
@@ -299,12 +301,14 @@
   }
   .img-wrapper,
   .video-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: auto;
+    /* width: 300px; */
+    /* flex-wrap: wrap; */
    
-    width:300px;
+    align-items: flex-start;
   }
   
   .play-btn {
@@ -324,15 +328,17 @@
   .skills-grid {
     display: grid;
     grid-template-columns: 1fr; /* Mobil: 1 kolumn */
-    gap: 2rem;
+    gap: 5rem;
+   
   }
 
   .skill-group h4, h4 {
     font-family: 'Inter',sans-serif;
-    margin: 0 0 0.5rem 0;
+    margin: 0000;
     font-variation-settings: 'wght' 800;
     text-transform: uppercase;
     font-size: 0.9rem;
+   
   }
 
   .skill-group p {
@@ -349,9 +355,11 @@
   .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 2rem;
-    width: 80%;
+    justify-content: center;
+    margin-top:1rem;
+   
+    margin-right:auto;
+    width: 100%;
   }
 
   .form-group {
@@ -391,21 +399,22 @@
 
   .contact-form button[type="submit"] {
    font-family: 'JetBrainsMono-Semibold',monospace;
-    align-self: flex-start;
+    align-self: flex-end;
     margin-top: 0.5rem;
   
-    background: var(--bg-color);
-    color: #636363;
+    background: var(--accent-color);
+    color: var(--bg-color);
     border: .5px solid rgb(154, 153, 153);
     padding: 8px 24px;
-    border-radius: 8px;
+    border-radius: 4px;
     transition: all 0.3s ease-in-out;
   }
   .contact-form button:hover{
    /* background-image: radial-gradient(#fefbfc 0%, #e1dfdf 100%);*/
    border: 1px solid black;
    font-family: 'JetBrainsMono-Semibold',monospace;
-   color:#000000;
+   color:black;
+   background: var(--bg-color);
   }
   
  
@@ -413,7 +422,18 @@
   /* Begränsa bredden på formuläret på större skärmar */
   @media (min-width: 768px) {
     .contact-form {
-      max-width: 70%; 
+      width:100%; 
+    }
+    .grid-item{
+      margin:auto;
+    }
+    .grid-item p {
+     width:100%; 
+     margin-top:1rem;
+    }
+    p {
+      margin:0;
+      padding:0;
     }
   }
   /* FOOTER & COOKIES */
@@ -594,7 +614,7 @@
   @media (min-width: 768px) {
     .cv-container {
       grid-template-columns: 1 2fr; /* Desktop: 2 kolumner (Sidomeny + Innehåll) */
-      padding: 2rem;
+      gap:5rem;
     }
     .profile-img{
     background-position: 0 280px;
@@ -621,15 +641,16 @@
     
     .grid-item {
       grid-template-columns: 1fr; /* Info + Innehåll på samma rad */
-      gap: 2rem;
+      /*gap: 5rem;*/
     }
     
     .skills-grid {
       grid-template-columns: repeat(1fr); 
-     padding-bottom: 1rem;;
+     padding-bottom: 1rem;
     }
     .skill-group img{
        margin-bottom: 1rem;
+       margin-top: 1rem;
     }
 
     video, img {

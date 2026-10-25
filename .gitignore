@@ -33,4 +33,10 @@ keys.json
 /archive/cv.html
 /archive/museum.html
 galleri.html
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
 .netlify/

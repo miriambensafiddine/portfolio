@@ -1,4 +1,17 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "link-page",
+  "compatibility_date": "2026-06-18",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "."
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
   "name": "link-page",
   "compatibility_date": "2026-06-19",
   "assets": {

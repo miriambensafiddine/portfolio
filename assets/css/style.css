@@ -456,16 +456,13 @@ video{
 
 .img-wrapper, 
 .video-wrapper {
-  width: 85%;
+ /* width: 85%;*/
+  width: 100%;
+  max-width: 480px;
   margin-bottom:6rem;
   border-radius: 12px 12px 12px 12px;
 }
-.img-wrapper-threejs{
-  width: 85%;
-  height:auto;
-  aspect-ratio: 9/ 16;
-  margin:auto;
-}
+
 .video-wrapper video {
   cursor: pointer;
 }

@@ -1,6 +1,6 @@
 {
-  "name": "link-page",
-  "compatibility_date": "2026-10-06",
+  "name": "portfolio",
+  "compatibility_date": "2026-10-31",
   "assets": {
     "directory": "."
   }
